@@ -1,0 +1,10 @@
+ /*
+        const api_url = 'http://ip-api.com/json/'
+            
+        async function getIPAddress(){
+            const response = await fetch(api_url);
+            const data = await response.json();
+            document.getElementById("ipdata").innerText = JSON.stringify(data); 
+        }
+        getIPAddress();
+        */

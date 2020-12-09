@@ -4,7 +4,7 @@ Vue.component("login-page", {
     props: ["login_details"]
 })
 
-new Vue({
+let vm = new Vue({
     el:"#app", 
     vuetify: new Vuetify(), 
     data: {
@@ -37,10 +37,11 @@ new Vue({
         ipData: {},
         allowedZipCodes: ['11553'],
         
-        debug: true, 
+        debug: false, 
 
     }, 
-    created: async function(){
+    
+    beforeMount: async function(){
         const api_url = 'http://ip-api.com/json/';
         const response = await fetch(api_url);
         const data = await response.json();
@@ -52,6 +53,7 @@ new Vue({
         }
         
     }, 
+    
      
 
 })       
