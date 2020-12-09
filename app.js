@@ -40,7 +40,7 @@ let vm = new Vue({
         debug: false, 
 
     }, 
-    
+    /*
     beforeMount: async function(){
         const api_url = 'http://ip-api.com/json/';
         const response = await fetch(api_url);
@@ -53,6 +53,7 @@ let vm = new Vue({
         }
         
     }, 
+    */
     
      
 
